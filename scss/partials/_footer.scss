@@ -1,0 +1,11 @@
+/*ESTILO DE FOOTER*/
+footer{
+    p{
+        color: $resaltado;
+      a{
+        color: $titulo;
+        text-decoration: none;
+        font-weight:bold;
+       }
+    }
+}

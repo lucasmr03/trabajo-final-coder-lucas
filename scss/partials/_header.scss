@@ -1,0 +1,26 @@
+@import 'mixins';
+/*AGREGANDO MIXIN A NAV*/
+nav{
+    ul{ 
+        li{
+
+            @include border-radio;
+            background-color: $principal;
+            padding:10px;
+            margin:4px ;
+            a{
+                color: white;
+            }
+        }
+        li:hover{
+
+            background-color: $titulo;
+            color:white;
+            a:hover{
+                color:white;
+        }    
+        }
+
+        
+    }
+}

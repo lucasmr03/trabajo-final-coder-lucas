@@ -1,0 +1,42 @@
+@import'mixins';
+/*FONDO de MAIN*/
+main{
+    background-image:url(../assets/img/imagenfondo.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+}
+/*ESTILOS*/
+h1{
+    color: $titulo;
+}
+h2{
+    color: $principal;
+    font-weight: bold;
+} 
+li{
+    color: $titulo;
+    font-weight: bold;
+}
+strong{
+    color: $resaltado;
+}
+
+/*APLICANDO EXTEND DE BOTONES*/
+.btn{
+    @include border-radio;
+    text-decoration:none;
+    color:white;
+    padding: 10px;
+    
+}
+.btn-compra{
+    @extend .btn;
+    @include border-radio;
+    background-color: $titulo;
+}
+.btn-design{
+    @extend .btn;
+    @include border-radio;
+    background-color: $principal;
+}
+
